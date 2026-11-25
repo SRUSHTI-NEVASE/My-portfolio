@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Srushti Nevase | Portfolio</title>
+
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        nav a,
+        .btn,
+        .skill,
+        .project-box {
+            transition: transform 0.2s ease, color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #7c3aed;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill:hover,
+        .project-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+
+        <h2>Srushti Nevase</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+
+        <div class="home-text">
+
+            <h1>Hello, I'm <span>Srushti Nevase</span></h1>
+
+            <h3>First Year Engineering Student</h3>
+
+            <p>
+                Welcome to my personal portfolio!
+                I am a Computer Science student who loves
+                learning new technologies and exploring ideas.
+                I enjoy programming and developing creative skills.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+
+        </div>
+
+
+        <!-- Profile Photo -->
+        <div class="home-image">
+
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEOHYMj5lBFOg/profile-displayphoto-crop_800_800/B4DaFsqOz6H8AI-/0/1792824376102?e=1797465600&v=beta&t=NQj4bvEXUtaXoXDB_2HCRzHkRd3rlRXr18rL8xDqgyc"
+                 alt="Srushti Nevase">
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 30px;">
+
+            <p style="flex: 1;">
+                Hello! I am Srushti Nevase, a First Year Engineering
+                student at Alard University Pune X NIAT.
+                I am pursuing Computer Science.
+
+                I am interested in technology, programming
+                and learning new skills. I enjoy reading books
+                and playing dodgeball.
+
+                My goal is to improve my technical knowledge
+                and become a successful software professional.
+            </p>
+
+            <div style="flex: 0 0 260px; text-align: right;">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQEOHYMj5lBFOg/profile-displayphoto-crop_800_800/B4DaFsqOz6H8AI-/0/1792824376102?e=1797465600&v=beta&t=NQj4bvEXUtaXoXDB_2HCRzHkRd3rlRXr18rL8xDqgyc"
+                     alt="Srushti Nevase" style="width: 240px; height: 240px; object-fit: cover; border-radius: 50%;">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skill-box">
+
+            <div class="skill">HTML</div>
+
+            <div class="skill">CSS</div>
+
+            <div class="skill">C Programming</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="project-box" style="display: flex; align-items: center; gap: 30px;">
+
+            <div style="flex: 1;">
+                <h3>OfferAI</h3>
+
+                <p>
+                    OfferAI is a project designed to analyse
+                    internship offers and help students understand
+                    internship opportunities. It aims to make
+                    internship searching easier and smarter for students.
+                </p>
+            </div>
+
+            <div style="flex: 0 0 320px;">
+                <img src="WhatsApp Image 2026-11-25 at 10.42.27 AM.jpeg"
+                     alt="OfferAI project dashboard"
+                     style="width: 320px; height: 220px; object-fit: cover; border-radius: 12px;">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 30px;">
+
+            <div>
+                <p>
+                    <b>Email:</b>
+                    <a href="mailto:srushtinevase0911@gmail.com">
+                        srushtinevase0911@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <b>Phone:</b>
+                    <a href="tel:7744947764">
+                        7744947764
+                    </a>
+                </p>
+
+                <p><b>Location:</b> Pune, Maharashtra</p>
+
+                <p><b>College:</b> Alard University Pune X NIAT</p>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Full Name" class="form-input" required>
+                    <input type="email" placeholder="Email Address" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Message" class="form-input message-input" required>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Srushti Nevase | All Rights Reserved
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
